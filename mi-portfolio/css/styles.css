@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@media (max-width: 768px){
+    h1 { font-size: 2rem;}
+    .menu { flex-direction: column; gap: 10px; }
+    .conteiner { padding: 20px; }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +21,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    backround-color: var(--azul-marino);
+    background-color: var(--azul-marino);
     color: white;
     line-height: 1.6;
     padding: 20px;
@@ -80,3 +86,4 @@ h2 {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
 }
+
