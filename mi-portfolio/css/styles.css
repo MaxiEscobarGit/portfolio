@@ -78,6 +78,31 @@ h2 {
     margin-bottom: 20px;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--verde-neon);
+    object-fit: cover;
+    object-position: center;
+}
+
+.highlight {
+    color: var(--verde-neon);
+    font-weight: 600;
+}
+
 .btn {
     display: inline-block;
     background-color: var(--verde-neon);
