@@ -22,14 +22,15 @@ body {
     min-height: 100vh;
 }
 
-.conteiner {
-    max-width: 1200px;
+.container {
+    max-width: 1100px;
     margin: 0 auto;
     background-color: rgba(10, 15, 44, 0.8);
     border-radius: 15px;
     box-shadow: var(--sombra);
-    padding: 30px;
+    padding: 0 20px;
     backdrop-filter: blur(5px);
+    
 }
 
 header {
@@ -98,6 +99,13 @@ h2 {
     object-position: center;
 }
 
+
+.about-text {
+    max-width: 600px; 
+    margin: 0 auto;   
+    padding: 0 20px;  
+}
+
 .contact-content {
     display: flex;
     gap: 40px;
@@ -144,7 +152,15 @@ h2 {
 .contact-form textarea {
     resize: vertical;
 }
+.icon {
+    width: 24px;  /* Tamaño personalizable */
+    height: 24px;
+    fill: currentColor; /* Hereda el color del texto */
+}
 
+.social-btn:hover .icon {
+    fill: var(--verde-neon); /* Cambia color al pasar el mouse */
+}
 .highlight {
     color: var(--verde-neon);
     font-weight: 600;
@@ -170,7 +186,7 @@ h2 {
 @media (max-width: 768px){
     h1 { font-size: 2rem;}
     .menu { flex-direction: column; gap: 10px; }
-    .conteiner { padding: 20px; }
+    .container { padding: 15px; }
     body { padding: 10px;}
     .menu li a {
         display: block;
