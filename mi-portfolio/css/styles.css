@@ -98,6 +98,53 @@ h2 {
     object-position: center;
 }
 
+.contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.social-btn:hover {
+    background: rgba(0, 255, 136, 0.2);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
 .highlight {
     color: var(--verde-neon);
     font-weight: 600;
