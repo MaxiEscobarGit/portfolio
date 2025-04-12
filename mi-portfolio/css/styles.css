@@ -126,6 +126,7 @@ h2 {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .skills-category {
@@ -137,19 +138,21 @@ h2 {
 .skills-category h3 {
     color: white;
     text-align: center;
+    width: 100%;
     margin: 20px 0;
     margin-bottom: 15px 0;
     font-size: 1.2rem;
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .skills-category h3::after {
     content: '';
     position: absolute;
     bottom: -5px;
-    left: 0;
-    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
     height: 2px;
     background: var(--verde-neon);
 }
@@ -161,6 +164,7 @@ h2 {
     flex-wrap: wrap;
     gap: 15px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .skill-item {
@@ -170,7 +174,11 @@ h2 {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     margin-bottom: 5px;
-    padding: 20px;
+    padding: 15px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     transition: all 0.3s;
 }
@@ -196,16 +204,24 @@ h2 {
 
 .skill-item span {
     display: block;
-    margin-top: 8px;
-    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.85rem;
 }
 
 /* Ajuste específico para el logo de JS */
 .skill-item svg[viewBox="0 0 630 630"] {
-    transform: scale(0.6);
+    transform: scale(0.55 );
     background: #f0db4f;
     border-radius: 4px;
+    margin-bottom: 5px;
     padding: 3px;
+}
+
+.skill-item svg[viewBox="0 0 452 520"] {
+    transform: scale(0.65); 
+    margin-bottom: 5px;
 }
 
 /* Ajuste para logos CSS/HTML */
